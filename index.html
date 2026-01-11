@@ -3,35 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIFES ENTERPRISES | Luxury Fashion</title>
-
-    <meta name="description" content="Nifes Enterprises is a luxury fashion brand in Lagos offering premium men's suits, women's dresses, shoes, and accessories. Shop high-end fashion via WhatsApp.">
-    <meta name="keywords" content="Nifes Enterprises, Nifes Fashion, Lagos Fashion Store, Men Suits Lagos, Women Gowns Lagos, Luxury Shoes Nigeria, Nifes Enterprises Alimosho">
-    <meta name="author" content="Nifes Enterprises">
-    
-    <meta property="og:title" content="NIFES ENTERPRISES | Luxury Fashion Store">
-    <meta property="og:description" content="Shop the latest in men's and women's luxury fashion. Order directly on WhatsApp.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80">
-    <meta property="og:url" content="https://Ajibobo-3.github.io/nifes-enterprises">
-    <meta name="google-site-verification" content="GEIhS_PHlDy8bGM1nMsv5h56LtI9VIaJPV7tl-qEn40" />
+    <title>DownTown Royal Hotel | GRA Ikeja</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <style>
-        /* --- LUXURY VARIABLES --- */
+        /* --- ROYAL VARIABLES --- */
         :root {
-            --onyx: #0a0a0a;
-            --charcoal: #141414;
-            --gold: #D4AF37;       /* Metallic Gold */
-            --gold-light: #F3E5AB;
+            --royal-purple: #2E0249;
+            --purple-light: #570A82;
+            --gold: #F7C815;
+            --gold-dim: #cfa60c;
             --white: #ffffff;
-            --grey: #888888;
-            --font-display: 'Cinzel', serif;
-            --font-body: 'Montserrat', sans-serif;
+            --off-white: #fdfdfd;
+            --font-head: 'Cinzel', serif;
+            --font-body: 'Lato', sans-serif;
         }
 
         /* --- RESET --- */
@@ -39,50 +29,47 @@
         html { scroll-behavior: smooth; }
 
         body {
-            background-color: var(--onyx);
-            color: var(--white);
             font-family: var(--font-body);
+            color: #333;
+            background-color: var(--off-white);
             line-height: 1.6;
-            overflow-x: hidden;
         }
 
         /* --- TYPOGRAPHY --- */
         h1, h2, h3 {
-            font-family: var(--font-display);
+            font-family: var(--font-head);
+            color: var(--royal-purple);
             text-transform: uppercase;
-            font-weight: 400;
-            letter-spacing: 2px;
         }
 
-        h1 { font-size: 3.5rem; color: var(--gold); }
-        h2 { font-size: 2.5rem; margin-bottom: 1rem; color: var(--white); }
-        p { color: var(--grey); font-weight: 300; margin-bottom: 1.5rem; }
+        h1 { font-size: 3rem; line-height: 1.2; }
+        h2 { font-size: 2.2rem; margin-bottom: 1rem; }
         
         .gold-text { color: var(--gold); }
+        .purple-text { color: var(--royal-purple); }
 
         /* --- UTILITIES --- */
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-        .section-padding { padding: 6rem 0; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 2rem; }
+        .section-padding { padding: 5rem 0; }
         .text-center { text-align: center; }
-        .flex-center { display: flex; align-items: center; justify-content: center; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
 
         /* --- BUTTONS --- */
         .btn {
             display: inline-block;
-            padding: 1rem 3rem;
+            padding: 1rem 2.5rem;
             text-decoration: none;
+            font-weight: 700;
             text-transform: uppercase;
-            font-size: 0.8rem;
-            letter-spacing: 2px;
-            font-weight: 600;
-            transition: all 0.4s ease;
+            letter-spacing: 1px;
+            transition: 0.3s;
             cursor: pointer;
-            border: 1px solid var(--gold);
+            border: 2px solid var(--gold);
         }
 
         .btn-gold {
             background-color: var(--gold);
-            color: var(--onyx);
+            color: var(--royal-purple);
         }
 
         .btn-gold:hover {
@@ -90,307 +77,248 @@
             color: var(--gold);
         }
 
-        .btn-outline {
-            background-color: transparent;
+        .btn-purple {
+            background-color: var(--royal-purple);
             color: var(--gold);
+            border-color: var(--royal-purple);
         }
 
-        .btn-outline:hover {
-            background-color: var(--gold);
-            color: var(--onyx);
+        .btn-purple:hover {
+            background-color: var(--purple-light);
+            color: white;
         }
 
-        /* --- NAVIGATION --- */
+        /* --- NAV --- */
         nav {
+            background: var(--royal-purple);
+            padding: 1rem 0;
             position: fixed;
-            top: 0;
             width: 100%;
-            padding: 1.5rem 0;
-            z-index: 1000;
-            background: rgba(10, 10, 10, 0.9);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid #222;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
 
-        .nav-content { display: flex; justify-content: space-between; align-items: center; }
-        
-        .logo {
-            font-family: var(--font-display);
-            font-size: 1.8rem;
-            color: var(--white);
-            letter-spacing: 4px;
-            text-decoration: none;
-        }
-        .logo span { color: var(--gold); }
-
-        .nav-links { display: flex; gap: 2rem; }
-        .nav-links a {
-            color: var(--grey);
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover { color: var(--gold); }
+        .nav-flex { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-family: var(--font-head); font-size: 1.5rem; color: var(--gold); font-weight: 700; }
 
         /* --- HERO --- */
         .hero {
-            height: 100vh;
-            /* High fashion background */
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            height: 85vh;
+            background: linear-gradient(rgba(46, 2, 73, 0.8), rgba(46, 2, 73, 0.6)), url('https://images.unsplash.com/photo-1578683010236-d716f9a3f461?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
             background-size: cover;
             background-position: center;
             display: flex;
             align-items: center;
-            justify-content: center;
             text-align: center;
-            position: relative;
+            color: white;
+            margin-top: 60px;
         }
 
-        .hero-content {
-            max-width: 800px;
-            padding: 2rem;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            background: rgba(0,0,0,0.4);
-        }
+        .hero h1 { color: white; margin-bottom: 1rem; }
+        .hero p { font-size: 1.2rem; color: #ddd; margin-bottom: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; }
 
-        /* --- COLLECTIONS --- */
-        .grid-3 {
+        /* --- EXCLUSIVE OFFER --- */
+        .offer-bar {
+            background: var(--gold);
+            padding: 2rem 0;
+            text-align: center;
+            color: var(--royal-purple);
+        }
+        .price-big { font-size: 2.5rem; font-weight: 700; font-family: var(--font-head); }
+
+        /* --- FEATURES --- */
+        .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
             margin-top: 3rem;
         }
-
-        .product-card {
-            background: var(--charcoal);
-            transition: transform 0.4s;
-            position: relative;
-            overflow: hidden;
-            border: 1px solid #222;
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-bottom: 4px solid var(--gold);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
         }
+        .feature-card:hover { transform: translateY(-5px); }
+        .feature-card i { font-size: 2rem; color: var(--royal-purple); margin-bottom: 1rem; }
 
-        .product-card:hover { transform: translateY(-10px); border-color: var(--gold); }
+        /* --- LOCATION --- */
+        .location { background: var(--royal-purple); color: white; }
+        .location h2 { color: var(--gold); }
+        .location p { color: #ccc; }
 
-        .product-img {
-            height: 400px;
-            width: 100%;
-            object-fit: cover;
-            transition: transform 0.4s;
+        /* --- MODAL --- */
+        .modal {
+            display: none; position: fixed; z-index: 1000; left: 0; top: 0;
+            width: 100%; height: 100%; background-color: rgba(46, 2, 73, 0.95);
+            align-items: center; justify-content: center;
         }
-
-        .product-card:hover .product-img { transform: scale(1.05); }
-
-        .product-info { padding: 1.5rem; text-align: center; }
-        .product-name { font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 0.5rem; color: white; }
-        .product-cat { font-size: 0.8rem; color: var(--gold); text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 1rem; }
-
-        /* --- WHATSAPP COMMUNITY SECTION --- */
-        .community {
-            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
+        .modal-content {
+            background-color: white; padding: 3rem; width: 90%; max-width: 450px;
+            border: 2px solid var(--gold); position: relative;
         }
-
-        .group-card-container {
-            display: flex;
-            justify-content: center;
-            gap: 3rem;
-            flex-wrap: wrap;
-            margin-top: 3rem;
+        .close-btn { position: absolute; top: 15px; right: 20px; font-size: 2rem; cursor: pointer; color: var(--royal-purple); }
+        
+        input, select {
+            width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid #ccc;
+            font-family: var(--font-body);
         }
-
-        .group-card {
-            background: rgba(20, 20, 20, 0.9);
-            border: 1px solid var(--gold);
-            padding: 3rem;
-            text-align: center;
-            min-width: 300px;
-            transition: 0.3s;
-        }
-
-        .group-card:hover { background: var(--gold); }
-        .group-card:hover h3, .group-card:hover p { color: var(--onyx); }
-        .group-card:hover .btn-outline { border-color: var(--onyx); color: var(--onyx); }
-
-        /* --- FOOTER --- */
-        footer {
-            border-top: 1px solid #222;
-            padding: 4rem 0;
-            font-size: 0.9rem;
-            color: #555;
-            background: #050505;
-        }
-
-        .socials a { color: var(--white); margin: 0 10px; font-size: 1.2rem; transition: 0.3s; }
-        .socials a:hover { color: var(--gold); }
+        input:focus { outline: none; border-color: var(--royal-purple); }
 
         /* --- MOBILE --- */
         @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; }
-            .nav-links { display: none; }
-            .group-card-container { flex-direction: column; align-items: center; gap: 2rem; }
-            .hero-content { border: none; }
+            h1 { font-size: 2.2rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .price-big { font-size: 2rem; }
         }
     </style>
 </head>
 <body>
 
     <nav>
-        <div class="container nav-content">
-            <a href="#" class="logo">NIFES <span>ENT.</span></a>
-            <div class="nav-links">
-                <a href="#men">Men</a>
-                <a href="#women">Women</a>
-                <a href="#accessories">Accessories</a>
-                <a href="#community" style="color: var(--gold);">Join Groups</a>
-            </div>
-            </div>
+        <div class="container nav-flex">
+            <span class="logo"><i class="fas fa-crown"></i> DownTown Royal</span>
+            <button onclick="openModal()" class="btn btn-gold" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">Book Direct</button>
+        </div>
     </nav>
 
     <header class="hero">
-        <div class="hero-content">
-            <h3>The New Standard</h3>
-            <h1>Elegance Redefined</h1>
-            <p>Exclusive wears, shoes, and accessories for the distinguished individual.</p>
-            <div style="margin-top: 2rem;">
-                <a href="#men" class="btn btn-gold">Shop Men</a>
-                <a href="#women" class="btn btn-outline" style="margin-left: 10px; color: white; border-color: white;">Shop Women</a>
-            </div>
+        <div class="container">
+            <h3>Ikeja GRA, Lagos</h3>
+            <h1>Experience Royalty <br>Without The Ransom</h1>
+            <p>Situated on Oladipo Bateye Street, the most prestigious address in Ikeja. Enjoy the serenity of the GRA at an unbeatable value.</p>
+            <button onclick="openModal()" class="btn btn-gold">Check Availability</button>
         </div>
     </header>
 
-    <section class="section-padding" id="men">
+    <div class="offer-bar">
         <div class="container">
-            <div class="text-center">
-                <span style="color: var(--gold); letter-spacing: 3px; text-transform: uppercase;">For Him</span>
-                <h2>Sartorial Excellence</h2>
-            </div>
-            
-            <div class="grid-3">
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1617137968427-b2e42415902d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Men Suit" class="product-img">
-                    <div class="product-info">
-                        <span class="product-cat">Suits & Blazers</span>
-                        <div class="product-name">The Executive Fit</div>
-                        <button onclick="orderOnWhatsapp('Executive Fit Suit')" class="btn btn-outline" style="width: 100%;">Inquire to Buy</button>
-                    </div>
-                </div>
-                
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Men Shoes" class="product-img">
-                    <div class="product-info">
-                        <span class="product-cat">Footwear</span>
-                        <div class="product-name">Oxford Leather Loafers</div>
-                        <button onclick="orderOnWhatsapp('Oxford Leather Loafers')" class="btn btn-outline" style="width: 100%;">Inquire to Buy</button>
-                    </div>
-                </div>
+            <p style="text-transform: uppercase; font-weight: 700; letter-spacing: 2px;">Direct Booking Exclusive</p>
+            <div class="price-big">₦30,000 <span style="font-size: 1rem; font-weight: 400;">/ Night</span></div>
+            <p style="font-size: 0.9rem;">(Save up to ₦50,000 compared to Expedia rates)</p>
+        </div>
+    </div>
 
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Men Casual" class="product-img">
-                    <div class="product-info">
-                        <span class="product-cat">Casual Wear</span>
-                        <div class="product-name">Premium Polos & Chinos</div>
-                        <button onclick="orderOnWhatsapp('Premium Polo Set')" class="btn btn-outline" style="width: 100%;">Inquire to Buy</button>
-                    </div>
-                </div>
+    <section class="section-padding">
+        <div class="container grid-2">
+            <div>
+                <h2>The GRA Advantage</h2>
+                <div style="width: 50px; height: 3px; background: var(--royal-purple); margin-bottom: 2rem;"></div>
+                <p><strong>DownTown Royal Hotel</strong> is strategically located in the Government Residential Area (GRA) of Ikeja. This means you are surrounded by international restaurants, nightclubs, and high-security zones.</p>
+                <p>Why pay ₦140,000 elsewhere when you can enjoy the same prestigious neighborhood for a fraction of the price?</p>
+                <ul style="list-style: none; margin-top: 1rem;">
+                    <li><i class="fas fa-check gold-text"></i> Outdoor Swimming Pool</li>
+                    <li><i class="fas fa-check gold-text"></i> Complimentary Breakfast</li>
+                    <li><i class="fas fa-check gold-text"></i> Secure Parking</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" style="width: 100%; border: 5px solid var(--gold);" alt="Pool Area">
             </div>
         </div>
     </section>
 
-    <section class="section-padding" id="women" style="background-color: #0f0f0f;">
-        <div class="container">
-            <div class="text-center">
-                <span style="color: var(--gold); letter-spacing: 3px; text-transform: uppercase;">For Her</span>
-                <h2>Grace & Glamour</h2>
-            </div>
-
-            <div class="grid-3">
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Women Dress" class="product-img">
-                    <div class="product-info">
-                        <span class="product-cat">Evening Wear</span>
-                        <div class="product-name">Velvet Evening Gown</div>
-                        <button onclick="orderOnWhatsapp('Velvet Evening Gown')" class="btn btn-outline" style="width: 100%;">Inquire to Buy</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Women Heels" class="product-img">
-                    <div class="product-info">
-                        <span class="product-cat">Footwear</span>
-                        <div class="product-name">Stiletto Pumps</div>
-                        <button onclick="orderOnWhatsapp('Stiletto Pumps')" class="btn btn-outline" style="width: 100%;">Inquire to Buy</button>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Women Bags" class="product-img">
-                    <div class="product-info">
-                        <span class="product-cat">Accessories</span>
-                        <div class="product-name">Designer Tote Bag</div>
-                        <button onclick="orderOnWhatsapp('Designer Tote Bag')" class="btn btn-outline" style="width: 100%;">Inquire to Buy</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-padding community" id="community">
-        <div class="container">
-            <div class="text-center">
-                <i class="fab fa-whatsapp" style="font-size: 3rem; color: var(--gold); margin-bottom: 1rem;"></i>
-                <h2>Join The Inner Circle</h2>
-                <p style="color: #ddd;">Be the first to see new arrivals. Select your preference below.</p>
-            </div>
-
-            <div class="group-card-container">
-                <div class="group-card">
-                    <h3>For Men</h3>
-                    <p>Exclusive updates on suits, shoes, and men's accessories.</p>
-                    <a href="https://chat.whatsapp.com/DzTZJntTc2k34Ewadqjltx" class="btn btn-outline" target="_blank">Join Men's Group</a>
-                </div>
-
-                <div class="group-card">
-                    <h3>For Women</h3>
-                    <p>Latest trends in dresses, heels, bags, and jewelry.</p>
-                    <a href="https://chat.whatsapp.com/JoqZWGIXaY96DEvZaYXENr" class="btn btn-outline" target="_blank">Join Women's Group</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
+    <section class="section-padding" style="background-color: #f0f0f0;">
         <div class="container text-center">
-            <a href="#" class="logo" style="font-size: 1.5rem;">NIFES <span>ENTERPRISES</span></a>
-            <p style="margin: 1rem auto;">Redefining style since 2026.</p>
-            <div class="socials">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
+            <h2>Royal Amenities</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bed"></i>
+                    <h3>Comfort Suites</h3>
+                    <p>Spacious rooms designed for rest after a busy day in Lagos.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-wifi"></i>
+                    <h3>Connectivity</h3>
+                    <p>Stay connected with our high-speed Wi-Fi service.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-glass-martini-alt"></i>
+                    <h3>Lounge</h3>
+                    <p>Relax by the pool with a drink from our bar.</p>
+                </div>
             </div>
-            <p style="margin-top: 2rem; font-size: 0.8rem;">&copy; 2026 Nifes Enterprises. All Rights Reserved.</p>
+        </div>
+    </section>
+
+    <section class="section-padding location">
+        <div class="container grid-2">
+            <div>
+                <h2>Find The Palace</h2>
+                <p>58b Oladipo Bateye Street, off Works Road, Ikeja GRA, Lagos.</p>
+                <br>
+                <p><i class="fas fa-phone-alt gold-text"></i> 0909 915 5696</p>
+                <br>
+                <a href="http://googleusercontent.com/maps.google.com/4" target="_blank" class="btn btn-gold">
+                    Get Directions
+                </a>
+            </div>
+            <div style="background: rgba(255,255,255,0.1); height: 300px; display: flex; align-items: center; justify-content: center; border: 1px solid var(--gold);">
+                <i class="fas fa-map-marked-alt" style="font-size: 3rem; color: var(--gold);"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer style="background: #1a0129; color: #888; padding: 2rem 0; text-align: center;">
+        <div class="container">
+            <p>&copy; 2026 DownTown Royal Hotel. GRA Ikeja.</p>
         </div>
     </footer>
 
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">×</span>
+            <h2 class="text-center" style="margin-bottom: 0.5rem;">Royal Reservation</h2>
+            <p class="text-center" style="margin-bottom: 1.5rem; color: #666;">Lock in the ₦30,000 Rate</p>
+            
+            <form onsubmit="sendToWhatsapp(event)">
+                <label>Name</label>
+                <input type="text" id="name" required placeholder="Your Name">
+                
+                <label>Phone</label>
+                <input type="tel" id="phone" required placeholder="090...">
+                
+                <label>Check-in</label>
+                <input type="date" id="date" required>
+                
+                <button type="submit" class="btn btn-purple" style="width: 100%;">Confirm via WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
     <script>
-        // Function to send order to WhatsApp Main Number
-        function orderOnWhatsapp(productName) {
-            // The business phone number
-            var phoneNumber = "2348158025961"; 
+        function openModal() {
+            document.getElementById('bookingModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('bookingModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == document.getElementById('bookingModal')) {
+                closeModal();
+            }
+        }
+
+        function sendToWhatsapp(e) {
+            e.preventDefault();
             
-            // The message
-            var text = "Hello Nifes Enterprises, I am interested in purchasing the " + productName + ". Is it available?";
+            var name = document.getElementById('name').value;
+            var phone = document.getElementById('phone').value;
+            var date = document.getElementById('date').value;
             
-            // Encode the text for URL
-            var encodedText = encodeURIComponent(text);
+            // Hotel Number
+            var hotelPhone = "2349099155696";
             
-            // Create the URL
-            var url = "https://wa.me/" + phoneNumber + "?text=" + encodedText;
+            var message = `Hello DownTown Royal, I want to book the 30k Promo Rate.%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Date:* ${date}`;
             
-            // Open in new tab
+            var url = `https://wa.me/${hotelPhone}?text=${message}`;
             window.open(url, '_blank').focus();
+            
+            closeModal();
         }
     </script>
 </body>
